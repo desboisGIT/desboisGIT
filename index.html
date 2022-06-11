@@ -7,15 +7,79 @@
     <title>THILOR</title>
 </head>
 <body>
-    <div id="head"><h1>co</h1></div>
-    <img src="logo.png" alt="logo">
+    <div id="head">
+        <h1 class="white">
+            THILOR
+        </h1>
+            <div class="Sec">
+                <h2 class="white">Acceuile</h2>
+            </div>
+
+            <div class="Sec">
+                <h2 class="white">Nos produits</h2>
+            </div>
+
+            <div class="Sec">
+                <h2 class="white">Location</h2>
+            </div>
+
+            <div class="Sec">
+                <h2 class="white">A propos</h2>
+            </div>
+    </div>
+    <div id="center">
+        <div id="box"><p><h3>COMMENCER</h3></p></div>
+    </div>
+    <video controls scrolling="no" marginwidth="0" marginheight="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" height="100%" width="100%" autoplay muted loop>
+        <source src="main_1.mp4" type="video/mp4">   
+    </video>
 </body>
 <style> 
 #head
 {
-    color: black;
+    background-color: #1a1a1a;
+    width: all;
+    height: 60px;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+}
+body
+{
+    margin: 0px;
+    margin-top: -23px;
+}
+.white
+{
+    color: aliceblue;
+}
+.Sec
+{
+   margin-left: 30px;
+   margin-top: 5px;
+} 
+#center
+{
+    color: aliceblue;
+    text-align: center;
+    z-index: 2; 
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#box
+{
+    height: 90px;
     width: 200px;
-    height: 200px;
+    position: absolute;
+    top: 25%; left: 50%;
+    margin-left: -100px;
+    background-color: #6c6c6c80;
+}
+#box:hover
+{
+    background-color: #ae8e2c5c;
+    transition: all .5s ease-in-out; 
+    transform: scale(1.2); 
 }
 </style>
 </html>
