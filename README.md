@@ -7,5 +7,4 @@
 </p>
 <br>
 <p align="center">
-    <img id="preview" src="https://komarev.com/ghpvc/?username=Zolton&color=grey">
 </p>
