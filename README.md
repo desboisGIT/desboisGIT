@@ -19,7 +19,7 @@
 
 <h3 align="center"> Full Stack Development: </h3>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,django,docker""/>
+  <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,django,docker,python,""/>
 </p>
 
 <h3 align="center"> Softwares and Tools: </h3>
