@@ -35,12 +35,6 @@
   </tr>
 </table>
 
-
-<h3 align="center"> 🚀 LeetCode Stats: </h3>
-<div align="center">
-    <img src="https://leetcard.jacoblin.cool/desboisgit?theme=dark&font=Abel&ext=contest" alt="LeetCode Stats"/>
-</div>
-
 <h3 align="center"> 💡</h3>
 <p align="center">
     <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
