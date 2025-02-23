@@ -24,11 +24,17 @@
 </p>
 
 <h3 align="center"> 📊 GitHub Stats: </h3>
-<p align="center">
-    <!--<img src="https://github-readme-stats.vercel.app/api?username=desboisGIT&show_icons=true&theme=radical" width="400"/>-->
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=desboisGIT&theme=radical" width="400"/>
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=desboisGIT&theme=radical"/>
-</p>
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=desboisGIT&theme=radical" width="400"/>
+    </td>
+    <td>
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=desboisGIT&theme=radical"/>
+    </td>
+  </tr>
+</table>
+
 
 <h3 align="center"> 🚀 LeetCode Stats: </h3>
 <div align="center">
