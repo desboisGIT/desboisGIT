@@ -10,7 +10,7 @@
 
 <h3 align="center"> Languages: </h3>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,js,py,ts,tsx"/>
+  <img src="https://skillicons.dev/icons?i=c,js,py,ts,bash"/>
 </p>
 
 <h3 align="center"> Full Stack Development: </h3>
@@ -41,7 +41,7 @@
     <img src="https://leetcard.jacoblin.cool/desboisgit?theme=dark&font=Abel&ext=contest" alt="LeetCode Stats"/>
 </div>
 
-<h3 align="center"> 💡 Random Dev Quote: </h3>
+<h3 align="center"> 💡</h3>
 <p align="center">
     <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </p>
