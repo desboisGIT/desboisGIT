@@ -15,7 +15,7 @@
 
 <h3 align="center"> Full Stack Development: </h3>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,django,docker,python,typescript,react"/>
+  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,django,fastapi,nextjs,docker,python,typescript,react"/>
 </p>
 
 <h3 align="center"> Softwares and Tools: </h3>
