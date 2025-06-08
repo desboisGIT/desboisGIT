@@ -10,7 +10,7 @@
 
 <h3 align="center"> Languages: </h3>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,js,py,ts,bash"/>
+  <img src="https://skillicons.dev/icons?i=c,c++,js,py,ts,bash"/>
 </p>
 
 <h3 align="center"> Full Stack Development: </h3>
