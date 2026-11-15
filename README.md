@@ -8,6 +8,7 @@
 <p align="center">
   <strong>Machine learning · Computer graphics · Systems that ship</strong><br />
   <a href="#primary-project--hygi-rendering">Denoising research</a> &nbsp; / &nbsp;
+  <a href="#ares--simulation-learning-and-flight-control">ARES</a> &nbsp; / &nbsp;
   <a href="#maverick--language-meets-spatial-reasoning">Maverick</a> &nbsp; / &nbsp;
   <a href="#engineering-beyond-the-model">Engineering</a>
 </p>
@@ -39,6 +40,36 @@ Rendering a clean image with Monte Carlo methods is expensive. Render fewer samp
 **Why this work matters to me:** a useful model needs more than a promising loss curve. I’m interested in the entire path from render buffers to a result you can inspect, compare and reproduce. The research is collaborative; model and pipeline details will be presented with the paper when ready.
 
 **Research stack:** Python · PyTorch · NumPy · OpenEXR · image restoration · numerical data processing
+
+---
+
+## ARES · Simulation, learning and flight control
+
+**A research framework for autonomous indoor mapping, exploration and depth-based flight-policy learning.**
+
+<a href="https://github.com/desboisGIT/ARES">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="assets/ares-banner-light.svg" />
+    <img src="assets/ares-banner.svg" alt="ARES — procedural worlds, learned control and reproducible evaluation." width="100%" />
+  </picture>
+</a>
+
+ARES builds the experimental foundation for a drone that maps unfamiliar buildings: generated environments, sensor simulation, observed-space mapping, exploration baselines and learned flight control. The focus is on **measuring behavior under explicit contracts**, with frozen policies, separate scoring and retained failure evidence.
+
+| Engineering area | What the repository contains |
+| :--- | :--- |
+| **Worlds and sensing** | Seeded furnished rooms, apartments and building floors; recorded occupancy-map import; CPU/CUDA depth simulation, noise models and calibration tools. Geometry-based dataset splits keep the same collision layout out of different partitions. |
+| **Mapping and exploration** | Depth/gyro odometry, voxel mapping and a classical frontier-exploration baseline. A local first-person viewer supports keyboard/gamepad controls, mission logging and replay. |
+| **Learned flight control** | Full rigid-body dynamics with a body-rate controller and motor lag. Differentiable BPTT training learns a bounded depth/state residual; PPO uses the same policy interface for comparison. |
+| **Evaluation and safety research** | Independent scoring, frozen checkpoints and source hashes, held-out cohorts, and conditional stopping-tube/backup-controller work with documented assumptions and open gates. |
+
+The [recorded Phase 4 waypoint comparison](https://github.com/desboisGIT/ARES/blob/main/reports/phase_4_gate.md) reports **1,000/1,000 successful simulation tasks** for the selected BPTT policy, with zero contacts or speed violations. PPO completed 994/1,000; the untrained controller reference also completed 1,000/1,000. These results establish the measured waypoint gate on that fixed cohort, without demonstrating learned superiority over the reference.
+
+**Active simulation research.** The integrated shield gate, real captures and onboard measurements remain open. Physical flight performance has not been established. The source is publicly viewable with rights reserved; see the repository's license.
+
+**[Explore ARES →](https://github.com/desboisGIT/ARES)** &nbsp; · &nbsp; **[Read the build plan →](https://github.com/desboisGIT/ARES/blob/main/docs/build_plan_v3.md)** &nbsp; · &nbsp; **[Inspect the evaluation evidence →](https://github.com/desboisGIT/ARES/blob/main/reports/phase_4_gate.md)**
+
+**Stack:** Python · NumPy · SciPy · CuPy/CUDA · PyTorch · differentiable simulation
 
 ---
 
