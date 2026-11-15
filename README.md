@@ -24,46 +24,17 @@ Rendering a clean image with Monte Carlo methods is expensive. Render fewer samp
 
 > **Private research · Paper in preparation.** The implementation and manuscript remain private while the research develops. This overview covers our current research direction and implemented workflow.
 
-<img src="assets/research-pipeline.svg" alt="Research workflow: render buffers, patch preparation, geometry-conditioned denoisers and full-frame evaluation." width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/research-pipeline-light.svg" />
+  <img src="assets/research-pipeline.svg" alt="Research workflow: render buffers, patch preparation, geometry-conditioned denoisers and full-frame evaluation." width="100%" />
+</picture>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### Geometry-aware learning
-
-We work with noisy color alongside **albedo, surface normals and depth**. The model code includes a NAFNet backbone with project-specific **FiLM conditioning**, plus geometry-guided architecture and loss experiments.
-
-The goal is practical: use information from the renderer to help distinguish sampling noise from actual image structure.
-
-</td>
-<td width="50%" valign="top">
-
-#### A pipeline built for experiments
-
-Multi-layer **EXR → normalized NumPy data → sampled patches → training batches**. Queued workers, Poisson-disk sampling and augmentation connect the render dataset to the training loop.
-
-The data path is part of the research: sampling, normalization and input contracts all affect what a model learns.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### Training that can be traced
-
-**PyTorch**, mixed precision, named experiment presets, learning-rate scheduling and atomic checkpoint saves. Checkpoints record resolved settings and training state so an experiment can be inspected after its configuration changes.
-
-</td>
-<td width="50%" valign="top">
-
-#### Evaluate the whole image
-
-Tiled full-frame inference, per-frame metrics, **Intel Open Image Denoise** comparisons and worst-case inspection. Recorded validation comparisons guide the experiments; a reproducible publication benchmark is still in preparation.
-
-</td>
-</tr>
-</table>
+| Research area | Implementation |
+| :--- | :--- |
+| **Geometry-aware learning** | Noisy color is paired with albedo, surface normals and depth. The model code includes a NAFNet backbone with project-specific FiLM conditioning, plus geometry-guided architecture and loss experiments. |
+| **Experimental data pipeline** | Multi-layer EXR is normalized into NumPy data, sampled into patches and assembled into training batches. Queued workers, Poisson-disk sampling and augmentation connect the render dataset to the training loop. |
+| **Traceable training** | PyTorch, mixed precision, named presets, learning-rate scheduling and atomic checkpoints. Resolved experiment settings and training state are recorded with the weights. |
+| **Full-frame evaluation** | Tiled inference, per-frame metrics, Intel Open Image Denoise comparisons and worst-case inspection. Recorded validation comparisons guide the experiments; a publication benchmark is in preparation. |
 
 **Why this work matters to me:** a useful model needs more than a promising loss curve. I’m interested in the entire path from render buffers to a result you can inspect, compare and reproduce. The research is collaborative; model and pipeline details will be presented with the paper when ready.
 
@@ -107,28 +78,19 @@ An operator asks it to explore an apartment, go to a room or search for an objec
   <img src="assets/quartz-banner.svg" alt="Quartz — study, tasks and training in one personal workspace." width="100%" />
 </picture>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Quartz · A personal workspace for study, training and agents
 
-#### Carnet de prépa · Private deployed app
+**[prepa.chaillou.work](https://prepa.chaillou.work)** is my authenticated daily-use application. It brings together a study platform, a detailed workout tracker, recurring tasks and a scoped MCP server, built with **React, Express and SQLite**.
 
-A personal study platform built with **React, Express and SQLite**: course navigation, exercises, FSRS spaced repetition and study tracking. Docker, HTTPS and automated deployment support everyday use.
+- **MCP integration:** agents can read authorized context, manage tasks and workout templates, start sessions, record user-supplied performances, and import course PDFs through supported tools. OAuth with PKCE, explicit scopes and revocable connections keep permissions under the user's control.
+- **Advanced workout tracking:** editable routines, weights/reps/RPE, warm-up and drop-set types, rest timers, notes and session history. Per-exercise load/repetition charts, comparisons between sessions and training summaries make progression inspectable.
+- **Study workflow:** a searchable course library, PDF reader, timed exercises, chapter mastery, FSRS flashcards, a study journal and Pomodoro. Recurring tasks, weighted completion tracking, goals and deadlines sit alongside study and training.
+- **Offline and reliable writes:** the prepared app can reopen offline on a previously authenticated device. Durable queues, revision checks and idempotent operation receipts protect supported task and workout changes from lost responses and duplicate submissions.
 
-Its repository stays private to protect teaching material and class information. The public overview deliberately excludes those contents.
+Docker, Caddy HTTPS and automated deployment support the live installation. The repository and its teaching material, class details and personal tracking data stay private.
 
-</td>
-<td width="50%" valign="top">
+### How I approach projects
 
-#### How I approach projects
-
-- **Build the full path:** data, logic, interface and deployment.
-- **Make behavior visible:** inspectable outputs, logs and failure cases.
-- **Keep evidence scoped:** simulation, tuning and validation answer different questions.
-- **Use the tool that fits:** Python for numerical work; TypeScript and JavaScript for interfaces and services.
-
-</td>
-</tr>
-</table>
+**Build the full path:** data, logic, interface and deployment. **Make behavior visible:** inspectable outputs, logs and failure cases. **Keep evidence scoped:** simulation, tuning and validation answer different questions.
 
 <p align="center"><strong>Current focus: geometry-informed denoising, reproducible research and autonomous systems.</strong></p>

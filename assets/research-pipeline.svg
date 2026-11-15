@@ -1,5 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="195" viewBox="0 0 1200 195" role="img" aria-labelledby="title desc"><title id="title">Denoising research workflow</title><desc id="desc">Render data to patch pipeline, geometry-conditioned models, then full-frame evaluation against OIDN. Workflow illustration, not a benchmark result.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="m0 0 8 4-8 4" fill="none" stroke="#6f88ac"/></marker></defs><rect width="1200" height="195" rx="14" fill="#10192b"/>
-<g font-family="Arial,sans-serif"><text x="29" y="31" font-size="12" letter-spacing="2" fill="#91a7c9">THE RESEARCH WORKFLOW</text>
-<g fill="#16243b" stroke="#34506c"><rect x="28" y="53" width="250" height="110" rx="10"/><rect x="326" y="53" width="250" height="110" rx="10"/><rect x="624" y="53" width="250" height="110" rx="10"/><rect x="922" y="53" width="250" height="110" rx="10"/></g>
-<g font-size="18" font-weight="700" fill="#e8f1ff"><text x="48" y="84">01 / Render data</text><text x="346" y="84">02 / Patch pipeline</text><text x="644" y="84">03 / Learned denoisers</text><text x="942" y="84">04 / Evaluate</text></g>
-<g font-size="15" fill="#a9bdd8"><text x="48" y="115">Noisy RGB + albedo</text><text x="48" y="140">Normals + depth</text><text x="346" y="115">EXR → NumPy → batches</text><text x="346" y="140">Sampling + augmentation</text><text x="644" y="115">NAFNet-FiLM</text><text x="644" y="140">Geometry-guided experiments</text><text x="942" y="115">Tiled full-frame inference</text><text x="942" y="140">Metrics + OIDN comparison</text></g></g><g stroke="#6f88ac" stroke-width="1.5" marker-end="url(#arrow)"><path d="M285 108h30"/><path d="M583 108h30"/><path d="M881 108h30"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="204" viewBox="0 0 1200 204" role="img" aria-labelledby="title desc">
+<title id="title">Research workflow</title><desc id="desc">Render buffers to patch preparation, learned denoisers and full-frame evaluation against Intel OIDN.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="44" y="38" fill="#63dfce" font-size="14" letter-spacing="3.4">RESEARCH WORKFLOW</text>
+<text x="44" y="82" fill="#8796a7" font-size="14">01</text>
+<text x="44" y="112" fill="#f0f6fc" font-size="23" font-weight="700">Render data</text>
+<text x="44" y="146" fill="#b9c7d5" font-size="17">Noisy RGB + albedo</text>
+<text x="44" y="174" fill="#8796a7" font-size="16">Normals + depth</text>
+<path d="M284 108h26m-6-5 6 5-6 5" fill="none" stroke="#8796a7" stroke-width="1.2"/>
+<text x="332" y="82" fill="#8796a7" font-size="14">02</text>
+<text x="332" y="112" fill="#f0f6fc" font-size="23" font-weight="700">Patch pipeline</text>
+<text x="332" y="146" fill="#b9c7d5" font-size="17">EXR → NumPy → batches</text>
+<text x="332" y="174" fill="#8796a7" font-size="16">Sampling + augmentation</text>
+<path d="M572 108h26m-6-5 6 5-6 5" fill="none" stroke="#8796a7" stroke-width="1.2"/>
+<text x="620" y="82" fill="#8796a7" font-size="14">03</text>
+<text x="620" y="112" fill="#f0f6fc" font-size="23" font-weight="700">Learned denoisers</text>
+<text x="620" y="146" fill="#b9c7d5" font-size="17">NAFNet-FiLM</text>
+<text x="620" y="174" fill="#8796a7" font-size="16">Geometry-guided experiments</text>
+<path d="M860 108h26m-6-5 6 5-6 5" fill="none" stroke="#8796a7" stroke-width="1.2"/>
+<text x="908" y="82" fill="#8796a7" font-size="14">04</text>
+<text x="908" y="112" fill="#f0f6fc" font-size="23" font-weight="700">Evaluate</text>
+<text x="908" y="146" fill="#b9c7d5" font-size="17">Tiled full-frame inference</text>
+<text x="908" y="174" fill="#8796a7" font-size="16">Metrics + OIDN comparison</text>
+</g></svg>
