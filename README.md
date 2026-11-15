@@ -25,8 +25,8 @@ Rendering a clean image with Monte Carlo methods is expensive. Render fewer samp
 > **Private research · Paper in preparation.** The implementation and manuscript remain private while the research develops. This overview covers our current research direction and implemented workflow.
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/research-pipeline-light.svg" />
-  <img src="assets/research-pipeline.svg" alt="Research workflow: render buffers, patch preparation, geometry-conditioned denoisers and full-frame evaluation." width="100%" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/research-workflow-light.svg" />
+  <img src="assets/research-workflow.svg" alt="Research workflow: render buffers, patch preparation, geometry-conditioned denoisers and full-frame evaluation." width="100%" />
 </picture>
 
 | Research area | Implementation |
