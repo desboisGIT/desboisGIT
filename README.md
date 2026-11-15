@@ -19,7 +19,7 @@ Rendering a clean image with Monte Carlo methods is expensive. Render fewer samp
 
 **This is my largest ongoing project.** It connects render-data preparation, model design, training infrastructure and full-frame evaluation in one research workflow.
 
-> **Private research · Paper in preparation.** The implementation and manuscript are not open sourced yet. This is a technical overview of ongoing work, not a publication or a claim of established state-of-the-art performance.
+> **Private research · Paper in preparation.** The implementation and manuscript remain private while the research develops. This overview covers our current research direction and implemented workflow.
 
 <img src="assets/research-pipeline.svg" alt="Research workflow: render buffers, patch preparation, geometry-conditioned denoisers and full-frame evaluation." width="100%" />
 
