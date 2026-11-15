@@ -72,7 +72,12 @@ Tiled full-frame inference, per-frame metrics, **Intel Open Image Denoise** comp
 
 **An indoor drone simulation stack that turns natural-language missions into typed, executable skills.**
 
-<a href="https://github.com/desboisGIT/Maverick"><img src="https://raw.githubusercontent.com/desboisGIT/Maverick/main/assets/banner.svg" alt="Maverick — Give it a mission. See how it reasons." width="100%" /></a>
+<a href="https://github.com/desboisGIT/Maverick">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/desboisGIT/Maverick/main/assets/banner-light.svg" />
+    <img src="https://raw.githubusercontent.com/desboisGIT/Maverick/main/assets/banner.svg" alt="Maverick — Give it a mission. See how it reasons." width="100%" />
+  </picture>
+</a>
 
 An operator asks it to explore an apartment, go to a room or search for an object. The stack connects an agent to mapping, scene memory and navigation; a **TypeScript / three.js Mission Console** shows the camera, voxel map, path and conversation.
 
