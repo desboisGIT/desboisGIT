@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/research-header.svg" alt="Robin Chaillou — Less noise. More signal. Machine learning for Monte Carlo rendering." width="100%" />
+  <img src="assets/research-header.svg" alt="Monte Carlo denoising — HyGI-Rendering. Learning to reconstruct low-sample renders with image and geometry information." width="100%" />
 </p>
 
 <p align="center">

@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
-<title id="title">Robin Chaillou — machine learning and rendering</title><desc id="desc">Less noise. More signal. Monte Carlo denoising research at HyGI-Rendering. Abstract geometry illustration, not a model output.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1226"/><stop offset="1" stop-color="#111c36"/></linearGradient><linearGradient id="a"><stop stop-color="#58e9dc"/><stop offset="1" stop-color="#a99bff"/></linearGradient><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#6880b0" stroke-opacity=".10"/></pattern><radialGradient id="glow"><stop stop-color="#38cbbd" stop-opacity=".18"/><stop offset="1" stop-color="#38cbbd" stop-opacity="0"/></radialGradient></defs>
-<rect width="1200" height="390" rx="18" fill="url(#bg)"/><rect width="1200" height="390" rx="18" fill="url(#grid)"/><ellipse cx="965" cy="180" rx="260" ry="240" fill="url(#glow)"/>
-<rect x="44" y="43" width="6" height="22" rx="3" fill="#58e9dc"/><text x="64" y="60" fill="#dce7ff" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">ROBIN CHAILLOU</text>
-<text x="44" y="143" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2">Less noise.</text><text x="44" y="215" fill="url(#a)" font-family="Arial,sans-serif" font-size="65" font-weight="700" letter-spacing="-2">More signal.</text>
-<text x="47" y="259" fill="#b6c5df" font-family="Arial,sans-serif" font-size="22">Machine learning for Monte Carlo rendering.</text>
-<rect x="46" y="296" width="343" height="39" rx="19" fill="#183a42" stroke="#58e9dc" stroke-opacity=".35"/><circle cx="65" cy="315" r="4" fill="#58e9dc"/><text x="80" y="321" font-family="Arial,sans-serif" font-size="15" fill="#9eefe5">HyGI-Rendering · Research in progress</text>
-<g fill="none" stroke-width="1.4" transform="translate(770 45)"><path d="M22 236 165 300 345 202 201 139Z" stroke="#7b90b9" stroke-opacity=".45"/><path d="M22 236V94L201 0 345 61V202M22 94 165 159 345 61M165 159V300M201 0V139" stroke="#6a83ad" stroke-opacity=".5"/>
-<g stroke="#58e9dc" stroke-opacity=".65"><ellipse cx="188" cy="147" rx="91" ry="88"/><ellipse cx="188" cy="147" rx="65" ry="88"/><ellipse cx="188" cy="147" rx="30" ry="88"/><ellipse cx="188" cy="147" rx="91" ry="63"/><ellipse cx="188" cy="147" rx="91" ry="27"/></g><g fill="#a99bff" stroke="none"><circle cx="22" cy="94" r="5"/><circle cx="201" cy="0" r="5"/><circle cx="345" cy="61" r="5"/><circle cx="165" cy="300" r="5"/></g><path d="M64 120 188 147 315 100M110 251 188 147 272 235" stroke="#a99bff" stroke-dasharray="4 6" stroke-opacity=".5"/></g>
-<text x="823" y="367" fill="#8a9dbf" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">GEOMETRY × LEARNING × RENDERING</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
+  <title id="title">Monte Carlo denoising — HyGI-Rendering</title>
+  <desc id="desc">Robin Chaillou · HyGI-Rendering. Learning to reconstruct low-sample renders with image and geometry information. Research in progress; paper in preparation.</desc>
+  <rect x="0.5" y="0.5" width="1199" height="269" rx="14" fill="#101722" stroke="#283241"/>
+  <rect x="46" y="42" width="30" height="3" rx="1.5" fill="#9fadd9"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="46" y="76" fill="#a1aec3" font-size="14" font-weight="600" letter-spacing="2.2">ROBIN CHAILLOU / HYGI-RENDERING</text>
+    <text x="43" y="145" fill="#f1f4f9" font-size="58" font-weight="700" letter-spacing="-1.8">Monte Carlo denoising</text>
+    <text x="46" y="188" fill="#b7c2d4" font-size="23">Learning to reconstruct low-sample renders with image and geometry information.</text>
+    <text x="46" y="233" fill="#8493aa" font-size="15">Research in progress · Paper in preparation</text>
+  </g>
+</svg>
