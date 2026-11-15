@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/research-header.svg" alt="Monte Carlo denoising — HyGI-Rendering. Learning to reconstruct low-sample renders with image and geometry information." width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/research-header-light.svg" />
+  <img src="assets/research-header.svg" alt="HyGI-Rendering — machine learning for Monte Carlo denoising." width="100%" />
+</picture>
 </p>
 
 <p align="center">
@@ -98,6 +101,11 @@ An operator asks it to explore an apartment, go to a room or search for an objec
 ---
 
 ## Engineering beyond the model
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/quartz-banner-light.svg" />
+  <img src="assets/quartz-banner.svg" alt="Quartz — study, tasks and training in one personal workspace." width="100%" />
+</picture>
 
 <table>
 <tr>

@@ -1,12 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
-  <title id="title">Monte Carlo denoising — HyGI-Rendering</title>
-  <desc id="desc">Robin Chaillou · HyGI-Rendering. Learning to reconstruct low-sample renders with image and geometry information. Research in progress; paper in preparation.</desc>
-  <rect x="0.5" y="0.5" width="1199" height="269" rx="14" fill="#101722" stroke="#283241"/>
-  <rect x="46" y="42" width="30" height="3" rx="1.5" fill="#9fadd9"/>
-  <g font-family="Arial, Helvetica, sans-serif">
-    <text x="46" y="76" fill="#a1aec3" font-size="14" font-weight="600" letter-spacing="2.2">ROBIN CHAILLOU / HYGI-RENDERING</text>
-    <text x="43" y="145" fill="#f1f4f9" font-size="58" font-weight="700" letter-spacing="-1.8">Monte Carlo denoising</text>
-    <text x="46" y="188" fill="#b7c2d4" font-size="23">Learning to reconstruct low-sample renders with image and geometry information.</text>
-    <text x="46" y="233" fill="#8493aa" font-size="15">Research in progress · Paper in preparation</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title desc">
+<title id="title">HyGI-Rendering</title><desc id="desc">Learning to denoise low-sample Monte Carlo renders. Python · PyTorch · OpenEXR   /   Private research · Paper in preparation</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="44" y="48" fill="#63dfce" font-size="15" font-weight="500" letter-spacing="3.4">MACHINE LEARNING / GRAPHICS / RESEARCH</text>
+<text x="40" y="132" fill="#f0f6fc" font-size="76" font-weight="700" letter-spacing="-2.5">HyGI-Rendering</text>
+<text x="44" y="176" fill="#b9c7d5" font-size="26">Learning to denoise low-sample Monte Carlo renders.</text>
+<text x="44" y="222" fill="#8796a7" font-size="16">Python · PyTorch · OpenEXR   /   Private research · Paper in preparation</text>
+</g></svg>
